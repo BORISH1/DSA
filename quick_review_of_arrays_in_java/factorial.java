@@ -10,7 +10,14 @@ public class factorial {
         return f;
     }
 
+    public static int facto(int n , int r){
+        int fact_n = fact(n);
+        int fact_r = fact(r);
+        int fact_nmr=fact(n-r);
+        return fact_n/(fact_r*fact_nmr);
+    }
+
     public static void main(String[] args) {
-        System.out.println(fact(7));
+        System.out.println(facto(5,2));
     }
 }
