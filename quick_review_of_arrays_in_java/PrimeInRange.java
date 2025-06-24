@@ -14,7 +14,7 @@ public class PrimeInRange {
 public static void printNumber(int n){
     for(int i = 2; i<=n ;i++){
         if(primeRange(i)){
-            System.out.println(i+" ");
+            System.out.print(i+" ");
         }
     }
 }
